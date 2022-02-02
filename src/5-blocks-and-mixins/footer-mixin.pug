@@ -1,0 +1,5 @@
+mixin footer(params = {})
+  - const {date, views} = params
+  footer
+    p= `Published: ${date}.`
+    p= `Views: ${views}.`

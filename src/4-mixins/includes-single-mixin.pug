@@ -1,0 +1,8 @@
+include ./image-mixin.pug
+
+div
+  p This is an <img>.
+  +image({
+    alt: "The image's alternative text.",
+    src: "The image's source."
+  })

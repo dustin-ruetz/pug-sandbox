@@ -1,0 +1,16 @@
+extends ./page.pug
+
+include ./footer-mixin.pug
+include ./header-mixin.pug
+include ./image-mixin-with-block.pug
+
+block head
+  title The page title.
+
+block body
+  h1 The page heading.
+  +header({author: "J.R.R. Tolkien", title: "The Hobbit"})
+  p Literary review of The Hobbit.
+  +image({alt: "Hobbit book cover description.", src: "Hobbit book cover source."})
+    figcaption A more detailed description of the book cover.
+  +footer({date: "2022-Feb-02", views: "123,456,789"})

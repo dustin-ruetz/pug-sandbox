@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "Dustin Ruetz",
@@ -12,6 +12,5 @@
   "devDependencies": {
     "jest": "^27.4.7",
     "pug": "^3.0.2"
-  },
-  "type": "module"
+  }
 }
