@@ -1,0 +1,10 @@
+mixin image(params = {})
+  -
+    const {alt, src} = params
+  figure
+    img.image(
+      alt=alt
+      src=src
+    )
+    if block
+      block

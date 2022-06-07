@@ -10,7 +10,14 @@
   "author": "Dustin Ruetz",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.4.7",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "pug": "^3.0.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "\\.(gif|jpg|jpeg|png|svg)$": "<rootDir>/src/binary-file-transformer.js"
+    }
   }
 }

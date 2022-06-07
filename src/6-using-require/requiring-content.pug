@@ -1,0 +1,9 @@
+include ./image-mixin.pug
+
+- const content = require('./content.json')
+div
+  p= content.hello
+  +image({
+    alt: content.alt,
+    src: content.src,
+  })

@@ -1,0 +1,19 @@
+extends ./page.pug
+
+include ./image.pug
+
+block content
+  -
+    //- NOTE: these variable must be unique (i.e. only one `content`), otherwise
+    //- their namespaces will collide when the Pug templates are compiled
+    const content = require('./content.json')
+
+block head
+  title= content.title
+
+block main
+  +image({
+    alt: content.image.alt,
+    src: content.image.src,
+  })
+    figcaption The ficaption!

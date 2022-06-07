@@ -1,0 +1,7 @@
+{
+  "title": "The title",
+  "image": {
+    "alt": "The alt",
+    "src": "./images/pug-icon.png"
+  }
+}

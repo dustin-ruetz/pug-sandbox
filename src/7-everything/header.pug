@@ -1,0 +1,7 @@
+//- NOTE: these variable must be unique (i.e. only one `content`), otherwise
+//- their namespaces will collide when the Pug templates are compiled
+- const headerContent = require('./header.json')
+
+header.header
+  .header__inner
+    a.header__link(href="/")= headerContent.iconText
